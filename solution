@@ -1,0 +1,13 @@
+board = [
+   [],
+   [],
+   [],
+   []
+]
+
+import random
+from string import ascii_lowercase
+
+for i in range(len(board)):
+    rand_letters = random.choices(ascii_lowercase,k=4) #k is number of required rand_letters
+    print(rand_letters)
