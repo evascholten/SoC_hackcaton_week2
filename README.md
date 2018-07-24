@@ -1,6 +1,6 @@
 # SoC_hackcaton_week2
 
-1. Make a 4x4 board filled with random letter.
+1. Make a 4x4 board filled with random letters.
 2. Import a dictionary.
 3. User has 3 minutes to make words. They can only use each letter once per word. They start at a random tile and travel up/down/diagonally to the next letters to make a word.
 4. Check if the word is in the dictionary. If yes, add it toa list.
