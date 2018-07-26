@@ -13,16 +13,8 @@ for i in range(len(dice)):
 
 #This solution gets a random letter from each dice. I hoped it would print in a nice 4x4 board but instead it prints all the letters below eachother.
 #We need to find a way to put 'letters' into a 4x4 grid of lists.
-#The solution below gives the sameoutput as the solution above. Might be easier to use since the above solution doesn't print as a list of lists anyway.
+#The below solution creates a list of lists, the 4x4 board. But the 'letters' don't appear in it properly.
 
-dice = [
-    ['AAEEGN'],['ELRTTY'],['AOOTTW'],['ABBJOO'],
-    ['EHRTVW'],['CIMOTU'],['DISTTY'],['EIOSST'],
-    ['DELRVY'],['ACHOPS'],['HIMNQU'],['EEINSU'],
-    ['EEGHNW'],['AFFKPS'],['HLNNRZ'],['DEILRX']
-    ]
-
-for i in range(len(dice)):
-    secure_random = random.SystemRandom()
-    nums = secure_random.choice(dice[i][0])
-    print(nums)
+board = [  ["" for j in range(4)] for i in range(4)]
+board[i][j]= letters
+print(board)
